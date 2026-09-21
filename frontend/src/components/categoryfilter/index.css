@@ -1,0 +1,55 @@
+.category-filter {
+    margin-bottom: 8px;
+    animation: fadeUp 0.5s ease 0.1s both;
+  }
+  
+  .filter-scroll {
+    display: flex;
+    gap: 8px;
+    overflow-x: auto;
+    padding-bottom: 4px;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  
+  .filter-scroll::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .filter-btn {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 10px 20px;
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 100px;
+    color: var(--text-secondary);
+    font-size: 13px;
+    font-weight: 500;
+    white-space: nowrap;
+    transition: all var(--transition);
+    font-family: var(--font-body);
+  }
+  
+  .filter-btn:hover {
+    border-color: var(--accent-border);
+    color: var(--text-primary);
+  }
+  
+  .filter-btn.active {
+    background: var(--accent);
+    border-color: var(--accent);
+    color: #0d0d0d;
+    font-weight: 600;
+  }
+  
+  .filter-dot {
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: #0d0d0d;
+    display: inline-block;
+  }
+  
